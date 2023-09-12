@@ -1,0 +1,68 @@
+<!--&lt;!&ndash;!&ndash;&gt;-->
+<!--Om deel te nemen aan de spelen van de Nationale Loterij moet je minimum 18 jaar oud zijn. Ontwerp een consoletoepassing waarmee je de leeftijd van de gebruiker opvraagt.-->
+<!--Als de ingevoerde leeftijd minimum 18 jaar bedraagt, krijgt de gebruiker toegang tot de site van de nationale loterij en verschijnt de tekst:-->
+<!--"Je bent x jaar oud. Je mag deelnemen aan de spelen van de Nationale Loterij.". Indien niet voldaan is aan deze voorwaarde verschijnt de tekst:-->
+<!--"Om deel te nemen aan de spelen van de Nationale Loterij moet je minimum 18 jaar oud zijn.".-->
+<!--Wanneer men 18 jaar of ouder is dient men te vragen of ze een volledig bulletin van 12 vakjes willen spelen.-->
+<!--Bij een volledig bulletin toon je de kostprijs van 20 euro. Voor 2 vakjes is de kostprijs 4 euro. Voor 4 vakjes 8 euro.-->
+<!--Voor 6 vakjes 12 euro. Voor 8 vakjes 16 euro. Voor 10 vakjes 18 euro.-->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+<script>
+    var leeftijd = prompt("Voer uw leeftijd in:");
+
+    if (leeftijd >= 18) {
+        // Gebruiker is oud genoeg om deel te nemen
+        document.write("Je bent " + leeftijd + " jaar oud. Je mag deelnemen aan de spelen van de nationale loterij.");
+
+        // Vraag of de gebruiker een volledig bulletin wil spelen
+        var volledigBulletin = confirm("Wil je een volledig bulletin van 12 vakjes spelen?");
+
+        if (volledigBulletin) {
+            document.write("De kostprijs voor een volledig bulletin van 12 vakjes is 20 euro.");
+        } else {
+            // Vraag hoeveel vakjes de gebruiker wil spelen
+            var aantalVakjes = prompt("Hoeveel vakjes wil je spelen (2, 4, 6, 8 of 10)?");
+
+            // Bereken de kostprijs op basis van het aantal vakjes
+            switch (parseInt(aantalVakjes)) {
+                case 2:
+                    document.write("De kostprijs voor 2 vakjes is 4 euro.");
+                    break;
+                case 4:
+                    document.write("De kostprijs voor 4 vakjes is 8 euro.");
+                    break;
+                case 6:
+                    document.write("De kostprijs voor 6 vakjes is 12 euro.");
+                    break;
+                case 8:
+                    document.write("De kostprijs voor 8 vakjes is 16 euro.");
+                    break;
+                case 10:
+                    document.write("De kostprijs voor 10 vakjes is 18 euro.");
+                    break;
+                default:
+                    document.write("Ongeldig aantal vakjes. Kies uit 2, 4, 6, 8 of 10.");
+            }
+        }
+    } else {
+        // Gebruiker is te jong
+        document.write("Om deel te nemen aan de spelen van de nationale loterij moet je minimum 18 jaar oud zijn.");
+    }
+</script>
+
+
+</body>
+</html>

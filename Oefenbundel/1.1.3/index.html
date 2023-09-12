@@ -1,0 +1,33 @@
+<!--•	De gebruiker dient zijn geboortejaar in te geven.-->
+<!--•	De gebruiker dient eveneens het lopende jaartal in te te geven.-->
+<!--•	Wanneer het verschil tussen het lopende jaartal en geboortejaar groter of gelijk is aan 18, can schrijf je
+op het scherm:"Vanaf nu mag, kan en beslis ik alles, binnen de wettelijke grenzen".-->
+<!--•	In alle andere gevallen:"Gelukkig heb ik mijn ouders die alles voor me regelen."-->
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+    let geboortejaar = prompt("Wat is je geboortejaar");
+    let jaar = prompt("wat is het huidige jaartal")
+
+    if (jaar - geboortejaar >= 18) {
+        document.write("Vanaf nu mag, kan en beslis ik alles, binnen de wettelijke grenzen.");
+    } else {
+        document.write("Gelukkig heb ik mijn ouders die alles voor me regelen..");
+    }
+</script>
+
+
+</body>
+</html>

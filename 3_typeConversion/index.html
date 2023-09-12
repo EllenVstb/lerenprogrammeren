@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!-- begin html -->
+<H1>Datatype conversion</H1>
+<h2> number, parseFloat, parseInt</h2>
+<h3> var, let, const</h3>
+
+<P id="myResult" ></P>
+
+
+
+<!-- end html -->
+
+<!-- begin javascript-->
+
+<script>
+let yearOfBirth = window.prompt("What is your birth year");
+yearOfBirth = Number(yearOfBirth)+1;
+
+document.getElementById("myResult").innerHTML = yearOfBirth;
+
+</script>
+<!-- end javascript-->
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Document</title>
+</head>
+
+<!--!-->
+<!--1. Individuele oefeningen-->
+<!--1.1.Rubriek Selecties-->
+<!--1.1.1. Oefening 1-->
+<!--Om deel te nemen aan de spelen van de Nationale Loterij moet je minimum 18 jaar oud zijn. -->
+<!--Ontwerp een consoletoepassing waarmee je de leeftijd van de gebruiker opvraagt. -->
+<!--Als de ingevoerde leeftijd minimum 18 jaar bedraagt, krijgt de gebruiker toegang tot de site van de nationale loterij en verschijnt de tekst: -->
+<!--"Je bent x jaar oud. Je mag deelnemen aan de spelen van de Nationale Loterij.". -->
+<!--Indien niet voldaan is aan deze voorwaarde verschijnt de tekst: "Om deel te nemen aan de spelen van de Nationale Loterij moet je minimum 18 jaar oud zijn.".-->
+
+<body>
+
+<script>
+    let leeftijd = prompt("Wat is je leeftijd?");
+    leeftijd >= 18 ?
+        document.write(" Je bent " + leeftijd + " jaar oud. Je mag deelnemen aan de spelen van de Nationale Loterij.") :
+        document.write("Om deel te nemen aan de spelen van de Nationale Loterij moet je minimum 18 jaar oud zijn.");
+
+</script>
+
+
+</body>
+</html>

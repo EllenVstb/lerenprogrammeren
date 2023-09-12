@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!-- begin html -->
+<H1>Datatype conversion</H1>
+<h2> number, parseFloat, parseInt</h2>
+<h3> var, let, const</h3>
+
+<label for="">What is your birth year</label>
+<input type="text" id="yearOfBirth">
+
+<label for="">How many extra years?</label>
+<input type="text" id="extraYears">
+<button type="button" id="calculateYears">bereken </button>
+
+<P id="myResult" ></P>
+
+
+
+<!-- end html -->
+
+<!-- begin javascript-->
+
+<script>
+
+    document.getElementById("calculateYears").onclick = function () {
+        let yearOfBirth = document.getElementById("yearOfBirth").value;
+        let extraYears = document.getElementById("extraYears").value;
+        let result = Number(yearOfBirth) + Number(extraYears);
+        document.getElementById("myResult").innerHTML = result;
+    }
+
+
+</script>
+<!-- end javascript-->
+</body>
+</html>
