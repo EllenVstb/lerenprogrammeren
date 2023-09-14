@@ -18,19 +18,24 @@
     <title>Document</title>
 </head>
 
-<label for="">Hoe oud ben je?</label>
-<input type="number" id="leeftijd">
-<body>
+
+<label> Voer uw leeftijd in</label>
+<input type="text" id="leeftijd" required>
+<br>
+
+<button id="checkLeeftijd">Check leeftijd</button>
 
 <script>
 
-    var leeftijd = document.getElementById("age").value;
+     document.getElementById.("checkleeftijd").onclick = function () {
+         let leeftijd = number(document.getElementById(leeftijd).valuealue)
 
-    if(leeftijd >= 18){
-        document.write(" Je bent " + leeftijd + " jaar oud. Je mag deelnemen aan de spelen van de Nationale Loterij.");
-    }else{
-        document.write("Om deel te nemen aan de spelen van de Nationale Loterij moet je minimum 18 jaar oud zijn.");
-    }
+         if(leeftijd >= 18){
+             document.write(" Je bent " + leeftijd + " jaar oud. Je mag deelnemen aan de spelen van de Nationale Loterij.");
+         }else{
+             document.write("Om deel te nemen aan de spelen van de Nationale Loterij moet je minimum 18 jaar oud zijn.");
+         }}
+
 
 </script>
 
